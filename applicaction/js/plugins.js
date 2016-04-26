@@ -22,3 +22,8 @@
 }());
 
 // Place any jQuery/helper plugins in here.
+$(function(){
+    $(window).load(function() {
+        $('.flexslider').flexslider();
+    });
+})

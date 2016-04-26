@@ -12,21 +12,52 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/flexslider.css" type="text/css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
-    <body class="container">
+    <body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+        <div class="container">
+            <header class="entete">
+                <figure>
+                    <img src="img/page-logo.png">
+                </figure>
+                <nav>
+                    <ul>
+                        <li>Home</li>
+                        <li>Features</li>
+                        <li>Pages</li>
+                        <li>Gallery</li>
+                        <li>Blog</li>
+                        <li>Contact</li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="flexslider">
+              <ul class="slides">
+                <li>
+                  <img src="img/slider/slider1.jpg" alt="slider1"/>
+                </li>
+                <li>
+                  <img src="img/slider/slider2.jpg" alt="slider2"/>
+                </li>
+                <li>
+                  <img src="img/slider/slider3.jpg" alt="slider3"/>
+                </li>
+              </ul>
+            </div>
+        </div>
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="js/vendor/jquery.flexslider.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-
+    
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
