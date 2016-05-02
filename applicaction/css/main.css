@@ -14,8 +14,11 @@ html {
     color: #222;
     font-size: 62.5%;
     line-height: 1.4;
+    box-sizing: border-box;
 }
-
+*,*:before,*:after{
+    box-sizing:inherit;
+}
 
 /*
  * Remove text-shadow in selection highlight:
@@ -112,6 +115,8 @@ body{
 }
 .container{
     height: inherit;
+    width: 940px;
+    margin: 0 auto;
 }
 .entete{
     display: flex;
@@ -160,32 +165,102 @@ body{
     color: white;
 
 }
-.block-a{
+.block-a article{
     display: flex;
-    flex-wrap: wrap;
+    justify-content:space-between;
 }
 .block-a > div{
     width: 25%;
     margin: 0;
 }
-.block-a h1{
-    display: flex;
+ h1{
     width: 100%;
     background: var(--my-back-color);
     color: white;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    padding: 13px 0 13px 8px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
+.block-a figure{
+    background: white;
+    width: 22%;
+    text-align: center;
+}
+.block-a figure img{
+    width: 100%;
+}
+.block-a figure h2{
+    color:orange;
+    font-size: 1.6rem;
+}
+.block-a figure p{
+    color:grey;
+    font-size: 1.3rem;
+}
+h1 span{
+    color:orange;
+}
+.block-b{
+    display: flex;
+    justify-content:space-between;
+    font-size: 1.4rem;
+}
+.block-b article:first-child{
+    width: 46%;
+}
+.block-b article:nth-child(2){
+    width: 47%;
+}
+iframe{
+    width: 100%;
+    border:none;
+    padding-top: 30px;
+}
+.block-b .slides figure{
+    display: flex;
+    justify-content:space-between;
+    padding-top: 30px;
+}
+.flexslider{
+    border:none;
+    background: none;
+}
+.block-b .slides img{
+    width: 80%;
+}
+.block-b .slides figcaption{
+    padding-left: 20px;
+    font-size: 1.4rem;
+}
+footer{
+    background: grey;
+    color:white;
+}
+footer .container{
+    display: flex;
+}
+ul{
+    padding: 0;
+    list-style: none;
+}
+.socials li{
+    background: url(../img/social-icons.png) no-repeat;
+    height: 47px;
+    width: 47px;
+    display: inline-block;
+}
+.socials li:first-child{
+    background-position: left top;
+}
+.socials li:nth-child(2){
+    background-position: 33% top;
+}
+.socials li:nth-child(3){
+    background-position: 66% top;
+}
+.socials li:last-child{
+    background-position: right top;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
