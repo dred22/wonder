@@ -12,7 +12,7 @@
 
 html {
     color: #222;
-    font-size: 1em;
+    font-size: 62.5%;
     line-height: 1.4;
 }
 
@@ -33,6 +33,9 @@ html {
 ::selection {
     background: #b3d4fc;
     text-shadow: none;
+}
+:root {
+  --my-back-color: #333333;
 }
 
 /*
@@ -95,26 +98,82 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+figure{
+    padding:0;
+    margin: 0;
+}
 body{
     max-width: 1140px;
     margin: 0 auto;
     width: 100%;
     background: url(../img/bg-body.jpg);
+    font-family: 'Arvo', serif;
+    font-size: 1.7rem;
 }
 .container{
     height: inherit;
-    display: flex;
-    flex-direction: column;
 }
 .entete{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.entete figure{
+    padding: 5rem 0;
+}
+.entete figure, .entete nav{
+    width: 50%;
+    margin: initial;
+}
+.entete .flexslider{
+    width: 60%;
     
-    border: 1px solid red;
 }
-.entete ul{
+.entete div:nth-child(4){
+    padding-left: 3rem;
+    padding-right: 3rem;
+    width: 30%;
+
+}
+.entete div:nth-child(4) h1{
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    font-weight: normal;
+    color: #333333;
+}
+.entete div:nth-child(4) p{
+    font-size: 2.2rem;
+    color: #888888;
+}
+.entete nav{
+    padding-top: 3rem; 
+}
+.entete > nav ul{
+    padding: 0;
     list-style-type: none;
+    display: flex;
+    background: var(--my-back-color);
+    justify-content: space-between;
 }
+.entete > nav ul li{
+    padding: 0.5rem 1rem;
+    color: white;
 
-
+}
+.block-a{
+    display: flex;
+    flex-wrap: wrap;
+}
+.block-a > div{
+    width: 25%;
+    margin: 0;
+}
+.block-a h1{
+    display: flex;
+    width: 100%;
+    background: var(--my-back-color);
+    color: white;
+}
 
 
 
