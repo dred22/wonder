@@ -1,0 +1,75 @@
+.socials li:first-child:hover{
+    background-position: left bottom;
+}
+.socials li:nth-child(2):hover{
+    background-position: 33% bottom;
+}
+.socials li:nth-child(3):hover{
+    background-position: 66% bottom;
+}
+.socials li:last-child:hover{
+    background-position: right bottom;
+}
+/***********************************************************
+                Mes medias
+************************************************************/
+@media (max-width: 768px){
+	.entete figure, .entete nav{
+	    width: 100%;
+	    
+	}
+	.entete > div{
+		width: 100% !important;
+	}
+	/*.entete div:nth-child(4){
+		width: 100%;
+	}*/
+	.entete nav {
+		padding-top: 0;
+	}
+	.entete figure {
+		padding: 3rem 0;
+	}
+	.block-a article {
+		flex-wrap: wrap;
+	}
+	.block-a figure {
+		width: 49%;
+		margin-bottom: 1rem;
+	}
+	.block-a figure img{
+		width: 70%;
+	    display: block;
+	    margin: 0 auto;
+	    margin-top: 1rem;
+	}
+	footer .container{
+    	flex-direction: column;
+    	/*justify-content:space-between;*/
+
+	}
+	footer article{
+    	width: 100%;
+	}
+	.pied-bar p{
+    	margin: auto  0;
+    	padding-top: 1rem;
+	}
+	.pied-bar nav{
+		width: 30%;
+	}
+	.container{
+		padding: 0 0.5rem;
+	}	
+	.pied-bar{
+		padding: 0 2rem;
+		margin-left:0.5rem;
+		margin-right:0.5rem;
+	}
+	.flickr-photos {
+		padding-left: 6rem;
+	}
+	.flickr-photos li{
+		width: 25%;
+	}
+}

@@ -39,6 +39,7 @@ html {
 }
 :root {
   --my-back-color: #333333;
+  --my-lettre-color:#EF4F1D;
 }
 
 /*
@@ -114,9 +115,12 @@ body{
     font-size: 1.7rem;
 }
 .container{
-    height: inherit;
-    width: 940px;
+    
+    max-width: 940px;
     margin: 0 auto;
+}
+header{
+    padding-bottom: 20px;
 }
 .entete{
     display: flex;
@@ -137,7 +141,7 @@ body{
 .entete div:nth-child(4){
     padding-left: 3rem;
     padding-right: 3rem;
-    width: 30%;
+    width: 40%;
 
 }
 .entete div:nth-child(4) h1{
@@ -165,40 +169,50 @@ body{
     color: white;
 
 }
+/******************************************************************
+                le milieu
+*******************************************************************/
 .block-a article{
     display: flex;
     justify-content:space-between;
+    margin-bottom: 40px;
 }
 .block-a > div{
     width: 25%;
     margin: 0;
 }
- h1{
+ section h1, article h1{
     width: 100%;
     background: var(--my-back-color);
     color: white;
     text-transform: uppercase;
     font-size: 1.5rem;
     padding: 13px 0 13px 8px;
+    margin-bottom: 30px;
 }
+
 .block-a figure{
     background: white;
-    width: 22%;
-    text-align: center;
+    width: 22% ;
 }
 .block-a figure img{
     width: 100%;
 }
 .block-a figure h2{
-    color:orange;
+    color:var(--my-lettre-color);
     font-size: 1.6rem;
+    text-align: center;
 }
 .block-a figure p{
     color:grey;
     font-size: 1.3rem;
+    text-align: center;
+}
+.block-a figure{
+    background: white;
 }
 h1 span{
-    color:orange;
+    color:var(--my-lettre-color);
 }
 .block-b{
     display: flex;
@@ -221,33 +235,108 @@ iframe{
     justify-content:space-between;
     padding-top: 30px;
 }
+.block-b li > p{
+    font-size: 1.2rem;
+}
 .flexslider{
     border:none;
     background: none;
 }
 .block-b .slides img{
-    width: 80%;
+    width: 60%;
 }
 .block-b .slides figcaption{
     padding-left: 20px;
     font-size: 1.4rem;
 }
+.my-link{
+    text-decoration: none;
+    color:var(--my-lettre-color);
+}
+/************************************************************************
+                Pied de page
+*************************************************************************/
 footer{
-    background: grey;
+    background: var(--my-back-color);
     color:white;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    
+}
+footer h2{
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 footer .container{
     display: flex;
+    justify-content:space-between;
 }
+footer article{
+    width: 23%;
+}
+.pied-bar{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content:space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 5rem;
+
+}
+
+.pied-bar p{
+    font-size: 1rem;
+    margin: auto 0;
+}
+.pied-bar nav li{
+    font-size: 1.2rem;
+}
+.pied-bar nav li{
+    padding-right: 1.5rem;
+    margin-right: 1.5rem;
+    border-right: 2px solid grey;
+}
+.pied-bar nav li:last-child{
+    border: none;
+    padding-right:initial;
+}
+
+.pied-bar nav ul{
+    display: flex;
+    justify-content:space-between;
+    
+    
+}
+footer article:nth-child(2) li{
+    line-height: 2.4rem;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+footer article:nth-child(3) p{
+    font-size: 1.3rem;
+    border-bottom: 1px dashed grey;
+    padding-bottom: 2rem;
+}
+footer address{
+    font-size: 1.3rem;
+}
+footer span, footer address li:first-child{
+    font-weight: bold;
+}
+
 ul{
     padding: 0;
     list-style: none;
 }
 .socials li{
     background: url(../img/social-icons.png) no-repeat;
-    height: 47px;
+    height: 46px;
     width: 47px;
     display: inline-block;
+    /*transition: background 0.05s;*/
 }
 .socials li:first-child{
     background-position: left top;
@@ -261,6 +350,69 @@ ul{
 .socials li:last-child{
     background-position: right top;
 }
+.flickr-photos{
+    display: flex;
+    flex-wrap: wrap;
+}
+.flickr-photos li{
+    padding-right: 7px;
+    padding-bottom: 5px;
+}
+.flickr-photos li a{
+    height: 47px;
+    width: 47px;
+    display: inline-block;
+    padding: 7px;   
+}
+.flickr-photos li:first-child a{
+    background: url(../img/flickr/1.jpg);
+    background-size: contain;
+}
+.flickr-photos li:nth-child(2) a{
+    background: url(../img/flickr/2.jpg);
+    background-size: contain;
+}
+.flickr-photos li:nth-child(3) a{
+    background: url(../img/flickr/3.jpg);
+    background-size: contain;
+}
+.flickr-photos li:nth-child(4) a{
+    background: url(../img/flickr/4.jpg);
+    background-size: contain;
+}
+.flickr-photos li:nth-child(5) a{
+    background: url(../img/flickr/5.jpg);
+    background-size: contain;
+}
+.flickr-photos li:nth-child(6) a{
+    background: url(../img/flickr/6.jpg);
+    background-size: contain;
+}
+.flickr-photos li:nth-child(7) a{
+    background: url(../img/flickr/7.jpg);
+    background-size: contain;
+}
+.flickr-photos li:nth-child(8) a{
+    background: url(../img/flickr/8.jpg);
+    background-size: contain;
+}
+.flickr-photos li:nth-child(9) a{
+    background: url(../img/flickr/9.jpg);
+    background-size: contain;
+}
+.flickr-photos li:nth-child(10) a{
+    background: url(../img/flickr/10.jpg);
+    background-size: contain;
+}
+.flickr-photos li:nth-child(11) a{
+    background: url(../img/flickr/11.jpg);
+    background-size: contain;
+}
+.flickr-photos li:last-child a{
+    background: url(../img/flickr/12.jpg);
+    background-size: contain;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
