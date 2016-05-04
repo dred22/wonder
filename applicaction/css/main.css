@@ -362,15 +362,14 @@ ul{
     padding-right: 7px;
     padding-bottom: 5px;
 }
-.flickr-photos li a{
-    height: 47px;
-    width: 47px;
+.flickr-photos li figure img{
+    
+    width: 47px;/*
     display: inline-block;
-    padding: 7px;   
-}
+    padding: 7px;*/   
+}/*
 .flickr-photos li:first-child a{
-    background: url(../img/flickr/1.jpg);
-    background-size: contain;
+    
 }
 .flickr-photos li:nth-child(2) a{
     background: url(../img/flickr/2.jpg);
@@ -415,7 +414,7 @@ ul{
 .flickr-photos li:last-child a{
     background: url(../img/flickr/12.jpg);
     background-size: contain;
-}
+}*/
 
 /* ==========================================================================
    Helper classes
