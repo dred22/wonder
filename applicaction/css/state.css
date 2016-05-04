@@ -14,6 +14,9 @@
                 Mes medias
 ************************************************************/
 @media (max-width: 768px){
+	html{
+		font-size: 59.5%;
+	}
 	.entete figure, .entete nav{
 	    width: 100%;
 	    
@@ -72,4 +75,59 @@
 	.flickr-photos li{
 		width: 25%;
 	}
+}
+
+
+@media (max-width: 383px){
+
+
+	.block-a figure {
+		width: 99%;
+		margin-bottom: 1rem;
+	}
+	.block-b{
+		flex-wrap: wrap;
+	}
+	.block-b > article{
+		width: 100% !important;
+		
+	}
+	.flickr-photos {
+		padding-left: 2rem;
+	}
+	/*.block-a figure img{
+		width: 70%;
+	    display: block;
+	    margin: 0 auto;
+	    margin-top: 1rem;
+	}
+	footer .container{
+    	flex-direction: column;
+    	
+
+	}
+	footer article{
+    	width: 100%;
+	}
+	.pied-bar p{
+    	margin: auto  0;
+    	padding-top: 1rem;
+	}
+	.pied-bar nav{
+		width: 30%;
+	}
+	.container{
+		padding: 0 0.5rem;
+	}	
+	.pied-bar{
+		padding: 0 2rem;
+		margin-left:0.5rem;
+		margin-right:0.5rem;
+	}
+	.flickr-photos {
+		padding-left: 6rem;
+	}
+	.flickr-photos li{
+		width: 25%;
+	}*/
 }
